@@ -1,6 +1,7 @@
 body {
 	background: #DEB887;
 	margin: 0;
+	font-family: Arial, Georgia,  Sans-serif;
 }
 
 header {
@@ -12,6 +13,10 @@ header {
 header h1 {
 	margin:0;
 	display: inline;
+}
+
+h1 {
+	text-align: center;
 }
 
 .img {
@@ -26,6 +31,24 @@ p {
 	margin: 50px;
 	border-radius: 5px;
 	padding: 10px;
+}
+
+ul {
+	margin: 0;
+	padding: 0 0 0 40px;
+	display: inline;
+	color: black;
+}
+
+ul li {
+	color: black;
+	display: inline-block;
+	list-style-type: none;
+	padding: 5px 15px;
+}
+
+ul a {
+	color: black;
 }
 
 nav ul {
@@ -89,7 +112,7 @@ footer {
 	background: #c59250;
 	color: white;
 	padding: 15px;
-	margin: 16% 0 0 0;
+	margin: 13.5% 0 0 0;
 	color: white;
 	clear: both;
 }
