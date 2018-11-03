@@ -4,8 +4,6 @@ body {
 	font-family: "Font Awesome", "Courier New", Calibri;
 }
 
-
-
 header {
 	background: #c59250;
 	color: white;
@@ -28,7 +26,6 @@ nav ul {
 
 nav ul li {
 	background: black;
-	color: blue;
 	display: inline-block;
 	list-style-type: none;
 	padding: 5px 0px;
