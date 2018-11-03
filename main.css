@@ -1,7 +1,7 @@
 body {
 	background: #DEB887;
 	margin: 0;
-	font-family: Arial, Georgia,  Sans-serif;
+	font-family: "Courier New", Calibri, sans-serif;
 }
 
 header {
@@ -17,6 +17,25 @@ header h1 {
 
 h1 {
 	text-align: center;
+}
+
+
+nav ul {
+	margin: 0;
+	padding: 0 0 0 40px;
+	display: inline;
+}
+
+nav ul li {
+	background: black;
+	color: white;
+	display: inline-block;
+	list-style-type: none;
+	padding: 5px 15px;
+}
+
+nav ul li a {
+	color: white;
 }
 
 .img {
@@ -49,24 +68,6 @@ ul li {
 
 ul a {
 	color: black;
-}
-
-nav ul {
-	margin: 0;
-	padding: 0 0 0 40px;
-	display: inline;
-}
-
-nav ul li {
-	background: black;
-	color: white;
-	display: inline-block;
-	list-style-type: none;
-	padding: 5px 15px;
-}
-
-nav ul li a {
-	color: white;
 }
 
 .projectIMG {
