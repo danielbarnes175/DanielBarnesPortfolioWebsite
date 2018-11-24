@@ -66,6 +66,8 @@ p {
 	margin: 5% 10% 0 10%;
 }
 
+
+
 ul {
 	margin: 0;
 	padding: 0 0 0 40px;
@@ -73,11 +75,21 @@ ul {
 	color: black;
 }
 
+
 ul li {
 	color: black;
 	display: inline-block;
 	list-style-type: none;
 	padding: 5px 15px;
+}
+#blogList {
+	display: block;
+	clear: both
+}
+.blogListItem {
+	display: block;
+	padding: none;
+	color: black;
 }
 
 ul a {
