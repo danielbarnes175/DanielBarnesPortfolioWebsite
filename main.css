@@ -87,6 +87,11 @@ p {
 	font-size: 18px;
 }
 
+.p-blog-post {
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
 ul {
 	margin: 0;
 	padding: 0 0 0 40px;
@@ -104,10 +109,6 @@ ul li {
 #blogList {
 	display: block;
 	clear: both
-}
-
-.blogListItem {
-
 }
 
 ul a {
