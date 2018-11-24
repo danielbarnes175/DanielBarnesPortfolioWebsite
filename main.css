@@ -30,7 +30,7 @@ margin: 0 0 5px 0;
 
 .pure-menu-custom a:hover {
 	color: black;
-	background: #c6c6c6;
+	background: rgb(54,174,201);
 }
 
 .pure-menu-custom-dropdown {
@@ -45,8 +45,23 @@ margin: 0 0 0 0;
 
 .pure-menu-custom-dropdown a:hover {
 	color: black;
+
 }
 
+.pure-menu-custom2 {
+	border:1px solid black;
+	margin: 3px 10% 3px 10%;
+	background: white;
+}
+
+.pure-menu-custom2 a {
+	color: black;
+}
+
+.pure-menu-custom2 a:hover {
+	color: black;
+	text-decoration: underline;
+}
 
 img {
 	display: block;
@@ -66,6 +81,7 @@ h1 {
 p {
 	margin: 10px 10% 0 10%;
 	font-family: Verdana, Geneva;
+	font-size: 18px;
 }
 
 ul {
