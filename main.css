@@ -49,9 +49,12 @@ margin: 0 0 0 0;
 }
 
 .pure-menu-custom2 {
-	border:1px solid black;
-	margin: 3px 10% 3px 10%;
+	border: 1px solid black;
+	margin: 3px 20% 3px 20%;
 	background: white;
+	display: block;
+	padding: none;
+	color: black;
 }
 
 .pure-menu-custom2 a {
@@ -104,9 +107,7 @@ ul li {
 }
 
 .blogListItem {
-	display: block;
-	padding: none;
-	color: black;
+
 }
 
 ul a {
