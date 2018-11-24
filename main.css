@@ -30,7 +30,7 @@ margin: 0 0 5px 0;
 
 .pure-menu-custom a:hover {
 	color: black;
-	background: rgb(54,174,201);
+	background: cyan;
 }
 
 .pure-menu-custom-dropdown {
