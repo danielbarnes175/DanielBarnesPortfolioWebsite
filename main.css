@@ -1,7 +1,8 @@
 body {
 	background: #DEB887;
 	margin: 0;
-	font-family: "Font Awesome", "Courier New", Calibri;
+	font-family: Verdana, Calibri;
+	font-weight: 500;
 }
 
 header {
