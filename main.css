@@ -1,7 +1,7 @@
 body {
 	background: #DEB887;
 	margin: 0;
-	font-family: Verdana, Calibri;
+	font-family: Verdana, Geneva;
 	font-weight: 500;
 }
 
@@ -56,7 +56,7 @@ img {
 }
 
 .pure-g [class *= "pure-u"] {
-	font-family: "Font Awesome", "Courier New", Calibri;
+	font-family: Verdana, Geneva;
 }
 
 h1 {
@@ -64,10 +64,9 @@ h1 {
 }
 
 p {
-	margin: 5% 10% 0 10%;
+	margin: 10px 10% 0 10%;
+	font-family: Verdana, Geneva;
 }
-
-
 
 ul {
 	margin: 0;
@@ -75,7 +74,6 @@ ul {
 	display: inline;
 	color: black;
 }
-
 
 ul li {
 	color: black;
