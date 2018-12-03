@@ -17,6 +17,10 @@ header h1 {
 	margin:0;
 	display: inline;
 }
+h2 {
+	margin: 0 0 0 25%;
+	font-size: 36px;
+}
 
 hr {
        display: block;
@@ -161,4 +165,21 @@ footer {
 	background: white;
 	padding: 10px;
 	border: 1px solid black;
+}
+
+.project-descriptions-links {
+	width: 50%;
+	display: inline;
+	background: white;
+	padding: 10px;
+	border: 1px solid black;
+}
+.project-descriptions-links a {
+	color: black;
+	text-decoration: none;
+}
+
+.project-descriptions-links a:hover {
+	color: black;
+	text-decoration: underline;
 }
