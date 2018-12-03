@@ -18,6 +18,22 @@ header h1 {
 	display: inline;
 }
 
+hr {
+       display: block;
+       position: relative;
+       padding: 0;
+       margin: 8px auto;
+       height: 0;
+       width: 50%;
+       max-height: 0;
+       font-size: 1px;
+       line-height: 0;
+       clear: both;
+       border: none;
+       border-top: 1px solid #000000;
+       border-bottom: 1px solid #000000;
+    }
+
 .pure-menu-custom {
 background: black;
 border:1px solid black;
@@ -72,6 +88,13 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 }
+.img-custom {
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    background: black;
+}
+
 
 .pure-g [class *= "pure-u"] {
 	font-family: Verdana, Geneva;
@@ -131,4 +154,12 @@ footer {
     bottom: 0;
     height: 3em;
     margin-top: 50px;
+}
+
+.project-descriptions {
+	margin-left: 30%;
+	margin-right: 30%;
+	background: white;
+	padding: 10px;
+	border: 1px solid black;
 }
