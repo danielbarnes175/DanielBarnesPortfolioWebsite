@@ -89,12 +89,11 @@ img {
 	margin-right: auto;
 }
 .img-custom {
-    height: 100%;
-    width: 100%;
-    background-size: 100%;
-    background: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
-
 
 .pure-g [class *= "pure-u"] {
 	font-family: Verdana, Geneva;
