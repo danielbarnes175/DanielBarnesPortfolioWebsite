@@ -22,6 +22,10 @@ h2 {
 	font-size: 36px;
 }
 
+h3 {
+	margin: 0 0 0 30%;
+}
+
 .h2-custom {
 	margin: 0;
 }
