@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Daniel Barnes</title>
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+		<link href="../../main.css" rel="stylesheet" type="text/css" />
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	</head>
+		<body>
+			<header>
+				<div class="pure-menu pure-u-1">
+				<nav>
+					<span class="pure-menu-heading"><h1>Daniel Barnes Portfolio</h1></span>
+					<ul class="pure-menu-list">
+						<li class="pure-menu-item pure-menu-custom"><a href="../../index.html" class="pure-menu-link">Home</a></li>
+						<li class="pure-menu-item pure-menu-custom"><a href="../about.html" class="pure-menu-link">About</a></li>				
+						<li class="pure-menu-item pure-menu-custom"><a href="../blog.html" class="pure-menu-link">Blog</a></li>
+						<li class="pure-menu-item pure-menu-custom"><a href="../links.html" class="pure-menu-link">Links/Contact</a></li>
+						<li class="pure-menu-item pure-menu-custom pure-menu-has-children pure-menu-allow-hover">
+							<a href="../projects.html" id="menuLink1" class="pure-menu-link">Projects</a>
+							<ul class="pure-menu-children">
+								<li class="pure-menu-item pure-menu-custom-dropdown"><a href="facialtrackingcamera.html" class="pure-menu-link">Face Tracking Camera</a></li>
+								<li class="pure-menu-item pure-menu-custom-dropdown"><a href="discordbot.html" class="pure-menu-link">Discord Bot</a></li>
+								<li class="pure-menu-item pure-menu-custom-dropdown"><a href="dndbot.html" class="pure-menu-link">DnD Bot</a></li>
+							</ul>
+							</li>
+					</ul>
+				</nav>
+				</div>
+			</header>
+
+			<div class="pure-g">
+				<div class="pure-u-1 pure-u-md-1-2 pure-u-s-1 pure-u-lg-1-4">
+					<h1>Facial Tracking Camera</h1>
+					<center><img src="../images/camera1.gif" width="400" height="500" alt="A picture of the project!" title="The project!"></center>
+					<br><br>
+					<center>
+					<div class="project-descriptions-links"><a href="https://github.com/danielbarnes175/HackISU2018">View Source</a></div>
+					<div class="project-descriptions-links"><a href="https://www.youtube.com/watch?v=eH3_yiz7nn4">View Video</a></div>
+					</center>
+					<br><br>
+
+					<p class="p-blog-post">
+						In under 36 hours, we created from scratch a camera that would track a person's face.
+						
+						<br><br>
+						<strong>The Components:</strong>
+						<br><br>
+						Parts:
+						<br>
+						1. Webcam
+						<br>
+						2. Arduino Board
+						<br>
+						3. Java Program
+						<br>
+						4. C Program
+						<br>
+						5. 2 Motors
+
+						<br><br>
+
+						Libraries Used:
+						<br>
+						1. OpenCV
+						<br>
+						2. JavaFX
+						<br>
+						3. RXTX
+						<br><br>
+
+						<strong>The Process:</strong>
+						<br><br>
+						So at the start of the hackathon, we came in knowing that we wanted to use OpenCV to create a camera that tracked faces. We knew OpenCV supported facial detection, but that was about it. We had no idea how to implement it. We came into this hackathon with an idea, and the google skills to figure out how to implement it. So we set to work.
+
+						<br><br>
+
+						We split into 2 teams. There was the team that worked on the facial detection, and the team that worked on the physical device with the motors. I was apart of the team that worked on the facial detection part of it, so I will write from mainly my point of view and what I worked on.
+
+						<br><br>
+
+						The first thing that we needed to figure out was how to actually read input from the camera. This part was relatively simple, but we had to make a display so people could see what the detection of their face. For this part we used JavaFX. Once we figured this out, it was time to implement the library for detecting a face.
+
+						<br><br>
+
+						It wasn't as simple as just adding it in, however. We needed to figure out how to add it in, and how to adjust it so that we would be able to use it for what we wanted.
+
+						<br><br>
+
+						OpenCV is actually a library that allows for detection of objects. We did some research, and it turns out that there were actually multiple different ways that we could make the library detect faces. What we chose to implement was to detect 2 eyes, the mouth, and the nose bridge. However, it only needs 2 of the 3 of these to be sure that it is a face. In the video, you might notice where I cover up certain parts of my face; this is to show that the camera can still detect my face even if certain parts are covered.
+
+						<br><br>
+
+						To keep it simple, we drew a rectangle around the face that contained the coordinates of the top left corner, and also the length and width of the rectangle. This part of creating the project definitely took the longest. I simplified it here, but translating it into code was not an easy task.
+
+						<br><br>
+
+						This is where the fun part came. We were able to detect faces, but that was about it. We now had to figure out how to connect our Java program with the motors. This is where the arduino board came in. Java by itself is not the best at interacting with hardware, so we had to figure out how to transfer the data of the information for the rectangles to the C program in the arduino that would be how we control the motors.
+
+						<br><br>
+
+						We decided to do all the calculations for movement in the Java program, and keep the actual movement of the motors in the C program. To put it simply, we would figure out in the Java program if we would move left or right, up or down. Then we would send those directions to the arduino and move the motors based on them.
+
+						<br><br>
+
+						So we finished with figuring out the calculations, and then we had to figure out how to actually send the data. We decided to use RXTX to send the serial data. The C program could then process that and move the motors.
+
+						<br><br>
+
+						Once we finished that, it was just tweaking the program in order to make it more efficient. We change a calculation here or there, changed a loop, fixed a bug, etc.
+
+						<br><br>
+
+						And then we had a working device. We had done it. We had taken an idea that we had, and under a timeline, figured out 3 different libraries we had never used before, and implemented them to create something that we wanted.
+
+						<br><br>
+						<strong>Scalability</strong>
+						<br><br>
+
+						There was a wide variety of different ways we figured we could improve the project, some of them more viable than others.
+
+						<br><br>
+						<strong>Live Video Stream</strong>- Set up the camera video output feed to stream to a website/server.<br><br>
+
+						<strong>Voice Control</strong> - Use the Amazon Alexa API to implement additional features such as 'Hide and Seek', 'Sentry Mode', or even 'Expression Detecting'<br><br>
+
+						<strong>Expression Detecting</strong> - We would add functionality to determine different expressions of a person, for example if a person is smiling or frowning.<br><br>
+
+						<strong>Hide and Seek</strong> - Have the computer output via voice, "I've found you!" when a face is detected, and then if a face is not detected after a certain amount of time it would output via voice, "Where'd you go?"<br><br>
+
+						<strong>Sentry Mode</strong> - Have the camera rotate back and forth, searching for a face, and when it finds a face, it would lock on. When the face is lost (if a person moved out of frame too quickly, etc) it would return back into sentry mode.<br><br>
+
+						<strong>Full 360 Support & Movement</strong> - We could give the camera the ability to completely rotate 360 degrees, so it wouldn't be limited by the range of motion. We could also add movement so the device could move around like a robot on wheels. It could detect something far away that might've been a face, but it only detected it for a moment, and then roll towards it so it can better detect if it is a face and then follow it!<br><br>
+
+						<strong>Independence from computer</strong> - We would set it up to run from something that could fit in the box and take it with it. This would work especially well with the movement, and live video stream. With the movement, it wouldn't have to lug around a laptop, and with the live video stream, you would still be able to access it.<br><br>
+
+						There are numerous ways that we could change the device, and many of those ways could actually be useful in society. From security to tasks around the house, the device is definitely expandable.<br><br>
+
+						<strong>Conclusion</strong><br><br>
+
+						This project was probably one of my favorite things to ever work on. With the hackathon format and being able to actually create something in such a short time, it was so beautiful to see our ideas grow the more we worked on it. It wasn't easy, and we struggled along the way, but that is what made it so amazing. I learned a lot about developing software from this project, and I am happy to say that I did it.
+
+						<br><br>
+
+						If you would like to know more, or have any questions, feel free to email me.
+					</p>
+				</div>
+			</div>
+
+
+		</body>
+	<footer class="footer-long-pages"></footer>
+</html>
