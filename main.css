@@ -1,193 +1,49 @@
-body {
-	background: #DEB887;
-	margin: 0;
-	font-family: Verdana, Geneva;
-	font-weight: 500;
-}
+html {
 
-header {
-	background: #c59250;
-	color: white;
-	padding: 10px 0 0 15px;
-	align-content: center;
+}
+.header {
+	background: red;
 	text-align: center;
 }
 
-header h1 {
-	margin:0;
-	display: inline;
+body {
+	height: 100%;
 }
-h2 {
-	margin: 0 0 0 25%;
-	font-size: 36px;
+.heading {
+	text-align: center;
 }
-
-h3 {
-	margin: 0 0 0 30%;
+.navbar {
+	justify-content: center;
 }
-
-.h2-custom {
-	margin: 0;
+.nav-item {
+	background: black;
+	border:1px solid black;
+	margin: 0 3px 5px 3px;
 }
 
-hr {
-       display: block;
-       position: relative;
-       padding: 0;
-       margin: 8px auto;
-       height: 0;
-       width: 50%;
-       max-height: 0;
-       font-size: 1px;
-       line-height: 0;
-       clear: both;
-       border: none;
-       border-top: 1px solid #000000;
-       border-bottom: 1px solid #000000;
-    }
-
-.pure-menu-custom {
-background: black;
-border:1px solid black;
-margin: 0 0 5px 0;
-}
-
-.pure-menu-custom a {
+.nav-item a {
 	color: yellow;
 }
 
-.pure-menu-custom a:hover {
+.nav-item a:hover {
 	color: black;
 	background: cyan;
 }
-
-.pure-menu-custom-dropdown {
-background: black;
-border:1px solid black;
-margin: 0 0 0 0;
+.fill {
+	min-height: 100%;
+	height: 100%;
 }
-
-.pure-menu-custom-dropdown a {
-	color: yellow;
-}
-
-.pure-menu-custom-dropdown a:hover {
-	color: black;
-
-}
-
-.pure-menu-custom2 {
-	border: 1px solid black;
-	margin: 3px 20% 3px 20%;
+.side-body {
 	background: white;
-	display: block;
-	padding: none;
-	color: black;
+	padding-top:1%;
+
+}
+.main-body {
+	background: orange;
+	padding:1% 10% 100% 10%;
 }
 
-.pure-menu-custom2 a {
-	color: black;
-}
-
-.pure-menu-custom2 a:hover {
-	color: black;
-	text-decoration: underline;
-}
-
-img {
-	display: block;
-	margin-top: 10px;
-	margin-left: auto;
-	margin-right: auto;
-}
-.img-custom {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.pure-g [class *= "pure-u"] {
-	font-family: Verdana, Geneva;
-}
-
-h1 {
-	text-align: center;
-}
-
-p {
-	margin: 10px 10% 0 10%;
-	font-family: Verdana, Geneva;
-	font-size: 18px;
-}
-
-.p-blog-post {
-	margin-left: 30%;
-	margin-right: 30%;
-}
-
-ul {
-	margin: 0;
-	padding: 0 0 0 40px;
-	display: inline;
-	color: black;
-}
-
-ul li {
-	color: black;
-	display: inline-block;
-	list-style-type: none;
-	padding: 5px 15px;
-}
-
-#blogList {
-	display: block;
-	clear: both
-}
-
-ul a {
-	color: black;
-}
-
-footer {
- 	background: #c59250;
-    clear: both;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 3em;
-    margin-top: 50px;
-}
-.footer-long-pages {
- background: #c59250;
-    clear: both;
-    position: relative;
-    bottom: 0;
-    height: 3em;
-    margin-top: 50px;
-}
-
-.project-descriptions {
-	margin-left: 30%;
-	margin-right: 30%;
-	background: white;
-	padding: 10px;
-	border: 1px solid black;
-}
-
-.project-descriptions-links {
-	width: 50%;
-	display: inline;
-	background: white;
-	padding: 10px;
-	border: 1px solid black;
-}
-.project-descriptions-links a {
-	color: black;
-	text-decoration: none;
-}
-
-.project-descriptions-links a:hover {
-	color: black;
-	text-decoration: underline;
+.footer {
+	background: yellow;
+	bottom: 0;
 }
