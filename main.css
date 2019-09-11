@@ -1,12 +1,12 @@
 body {
-	background: #DEB887;
+	background: #FFFFFF;
 	margin: 0;
 	font-family: Verdana, Geneva;
 	font-weight: 500;
 }
 
 header {
-	background: #c59250;
+	background: #E6E6E6;
 	color: white;
 	padding: 10px 0 0 15px;
 	align-content: center;
@@ -150,7 +150,7 @@ ul a {
 }
 
 footer {
- 	background: #c59250;
+ 	background: #E6E6E60;
     clear: both;
     position: absolute;
     bottom: 0;
@@ -159,7 +159,7 @@ footer {
     margin-top: 50px;
 }
 .footer-long-pages {
- background: #c59250;
+ background: #E6E6E6;
     clear: both;
     position: relative;
     bottom: 0;
