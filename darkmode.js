@@ -5,33 +5,35 @@ const grayWhite = "#E6E6E6";
 const grayBlack = "#000000";
 
 function init() {
-	if(typeof isDark === "undefined") {
-		isDark = false;
-	} else {
-		setColorOnLoad();
-	}
+	isDark = sessionStorage.getItem('isDark');
+	setColorOnLoad();
 };
 function toggleDarkMode() {
 	if (isDark) {
 		document.body.style.background = white;
 		document.body.style.color = black;
-		document.getElementById("test").style.background = grayWhite;
+
+		document.getElementById("iNeedThisToChangeTheHeaderWithJavascript").style.background = grayWhite;
 		isDark = false;
+		sessionStorage.setItem('isDark', 'false');
 	} else {
 		document.body.style.background = black;
 		document.body.style.color = white;
-		document.getElementById("test").style.background = grayBlack;
+		document.getElementById("iNeedThisToChangeTheHeaderWithJavascript").style.background = grayBlack;
 		isDark = true;
+		sessionStorage.setItem('isDark', 'true');
 	}
 };
 function setColorOnLoad() {
 	if (!isDark) {
 		document.body.style.background = white;
 		document.body.style.color = black;
-		document.getElementById("test").style.background = grayWhite;
+		document.getElementById("iNeedThisToChangeTheHeaderWithJavascript").style.background = grayWhite;
+		sessionStorage.setItem('isDark', 'false');
 	} else {
 		document.body.style.background = black;
 		document.body.style.color = white;
-		document.getElementById("test").style.background = grayBlack;
+		document.getElementById("iNeedThisToChangeTheHeaderWithJavascript").style.background = grayBlack;
+		sessionStorage.setItem('isDark', 'true');
 	}
 }
