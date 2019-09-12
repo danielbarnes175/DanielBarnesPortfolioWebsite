@@ -6,7 +6,11 @@ const grayBlack = "#000000";
 
 function init() {
 	console.log(sessionStorage.getItem('isDark'));
-	isDark = sessionStorage.getItem('isDark');
+	if (sessionStorage.getItem('isDark') == null) {
+		isDark = false;
+	} else {
+		isDark = JSON.parse(sessionStorage.getItem('isDark'));
+	}
 	console.log("isDark " + isDark);
 	setColorOnLoad();
 };
