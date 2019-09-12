@@ -28,7 +28,7 @@ function toggleDarkMode() {
 };
 
 function setColorOnLoad() {
-	if (isDark) {
+	if (!isDark) {
 		document.body.style.background = white;
 		document.body.style.color = black;
 		document.getElementById("iNeedThisToChangeTheHeaderWithJavascript").style.background = grayWhite;
