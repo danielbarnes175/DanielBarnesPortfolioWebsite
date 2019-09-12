@@ -4,9 +4,10 @@ body {
 	font-family: Verdana, Geneva;
 	font-weight: 500;
 }
-#iNeedThisToChangeTheHeaderWithJavascript {
 
-}
+#iNeedThisToChangeTheHeaderWithJavascript {}
+#iNeedThisToChangeTheFooterWithJavascript {}
+
 header {
 	background: #E6E6E6;
 	color: white;
